@@ -1,0 +1,38 @@
+name: ZenvoraEvents
+version: ${version}
+main: com.zenvora.events.ZenvoraEventsPlugin
+description: Professional modular event engine for Paper servers.
+author: Zenvora Studios
+website: https://github.com/ZenvoraStudios/ZenvoraEvents
+api-version: '26.2'
+
+commands:
+  zevents:
+    description: Main Zenvora Events command.
+    usage: /zevents <list|info|start|stop|top|reload|stats>
+    aliases: [ze]
+  ze:
+    description: Alias for Zenvora Events.
+    usage: /ze <subcommand>
+
+permissions:
+  zenvoraevents.admin:
+    description: Full access to Zenvora Events.
+    default: op
+    children:
+      zenvoraevents.start: true
+      zenvoraevents.stop: true
+      zenvoraevents.top: true
+      zenvoraevents.stats: true
+  zenvoraevents.start:
+    description: Start events.
+    default: op
+  zenvoraevents.stop:
+    description: Stop events.
+    default: op
+  zenvoraevents.top:
+    description: View event leaderboard.
+    default: true
+  zenvoraevents.stats:
+    description: View event statistics.
+    default: true
