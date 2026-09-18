@@ -1,0 +1,109 @@
+events:
+
+  mining_rush:
+    display-name: "<gradient:#8A2BE2:#FF4FD8><bold>⛏ FIEBRE MINERA</bold></gradient>"
+    description: "Mina bloques y consigue puntos."
+    enabled: true
+    duration-seconds: 600
+    cooldown-seconds: 1800
+    type: MINING
+    points:
+      default: 1
+      valuable:
+        DIAMOND_ORE: 15
+        DEEPSLATE_DIAMOND_ORE: 20
+        EMERALD_ORE: 10
+        DEEPSLATE_EMERALD_ORE: 15
+        GOLD_ORE: 5
+        DEEPSLATE_GOLD_ORE: 7
+        ANCIENT_DEBRIS: 30
+    rewards:
+      participation:
+        - "give %player% diamond 1"
+      top:
+        "1":
+          - "give %player% diamond 10"
+        "2":
+          - "give %player% diamond 5"
+        "3":
+          - "give %player% diamond 3"
+
+  mob_frenzy:
+    display-name: "<gradient:#FF4D4D:#FF9D4D><bold>👹 HORDA SALVAJE</bold></gradient>"
+    description: "Derrota criaturas para conseguir puntos."
+    enabled: true
+    duration-seconds: 600
+    cooldown-seconds: 1800
+    type: MOB_KILL
+    points:
+      default: 2
+      valuable:
+        ZOMBIE: 3
+        SKELETON: 3
+        CREEPER: 5
+        ENDERMAN: 8
+        BLAZE: 10
+        WITHER_SKELETON: 12
+    rewards:
+      participation:
+        - "give %player% emerald 1"
+      top:
+        "1":
+          - "give %player% emerald 15"
+        "2":
+          - "give %player% emerald 8"
+        "3":
+          - "give %player% emerald 4"
+
+  fishing_festival:
+    display-name: "<gradient:#22C1C3:#5B86E5><bold>🎣 FESTIVAL DE PESCA</bold></gradient>"
+    description: "Pesca y acumula puntos."
+    enabled: true
+    duration-seconds: 600
+    cooldown-seconds: 1800
+    type: FISHING
+    points:
+      default: 5
+      valuable:
+        COD: 5
+        SALMON: 7
+        PUFFERFISH: 10
+        TROPICAL_FISH: 15
+    rewards:
+      participation:
+        - "give %player% emerald 1"
+      top:
+        "1":
+          - "give %player% diamond 8"
+        "2":
+          - "give %player% diamond 4"
+        "3":
+          - "give %player% diamond 2"
+
+  double_xp:
+    display-name: "<gradient:#FFE259:#FFA751><bold>✨ DOBLE EXPERIENCIA</bold></gradient>"
+    description: "Consigue el doble de experiencia."
+    enabled: true
+    duration-seconds: 600
+    cooldown-seconds: 3600
+    type: DOUBLE_XP
+    points:
+      default: 1
+    rewards:
+      participation:
+        - "give %player% gold_ingot 2"
+      top:
+        "1":
+          - "give %player% experience_bottle 16"
+        "2":
+          - "give %player% experience_bottle 8"
+        "3":
+          - "give %player% experience_bottle 4"
+
+scheduler:
+  enabled: true
+  random-events:
+    - mining_rush
+    - mob_frenzy
+    - fishing_festival
+    - double_xp
