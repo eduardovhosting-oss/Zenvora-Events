@@ -1,0 +1,40 @@
+general:
+  no-permission: "<red>No tienes permiso.</red>"
+  player-only: "<red>Este comando solo puede usarlo un jugador.</red>"
+  unknown-command: "<red>Subcomando desconocido.</red>"
+  usage: "<gray>Usa <white>/zevents help</white>.</gray>"
+
+list:
+  header: "<gradient:#8A2BE2:#FF4FD8><bold>✦ ZENVORA EVENTS ✦</bold></gradient>"
+  entry: "<gray>• <white>%id%</white> <dark_gray>—</dark_gray> %name% <dark_gray>(%type%)</dark_gray></gray>"
+
+event:
+  started: "<green>✓ %name% <gray>ha comenzado.</gray>"
+  ended: "<yellow>✓ %name% <gray>ha terminado.</gray>"
+  stopped: "<yellow>✓ El evento activo ha sido detenido.</yellow>"
+  already-running: "<red>✕ Ya hay un evento activo.</red>"
+  not-found: "<red>✕ Evento no encontrado.</red>"
+  disabled: "<red>✕ Ese evento está desactivado.</red>"
+  cooldown: "<red>✕ Ese evento está en cooldown.</red>"
+  info:
+    header: "<gradient:#8A2BE2:#FF4FD8><bold>EVENTO</bold></gradient>"
+    line: "<gray>%name% <dark_gray>|</dark_gray> Tipo: <white>%type%</white> <dark_gray>|</dark_gray> Duración: <white>%duration%s</white></gray>"
+
+top:
+  header: "<gradient:#FFD700:#FF8C00><bold>🏆 TOP EVENTO</bold></gradient>"
+  empty: "<gray>Aún no hay participantes.</gray>"
+  entry: "<white>#%position%</white> <gray>%player%</gray> <dark_gray>—</dark_gray> <yellow>%points% puntos</yellow>"
+
+stats:
+  header: "<gradient:#8A2BE2:#FF4FD8><bold>ESTADÍSTICAS</bold></gradient>"
+  line: "<gray>%player% <dark_gray>—</dark_gray> <white>%points% puntos</white>"
+
+help:
+  - "<gradient:#8A2BE2:#FF4FD8><bold>✦ ZENVORA EVENTS ✦</bold></gradient>"
+  - "<gray>/zevents list <dark_gray>- Ver eventos"
+  - "<gray>/zevents info <id> <dark_gray>- Información"
+  - "<gray>/zevents start <id> <dark_gray>- Iniciar"
+  - "<gray>/zevents stop <dark_gray>- Detener"
+  - "<gray>/zevents top <dark_gray>- Clasificación"
+  - "<gray>/zevents stats [jugador] <dark_gray>- Estadísticas"
+  - "<gray>/zevents reload <dark_gray>- Recargar"
