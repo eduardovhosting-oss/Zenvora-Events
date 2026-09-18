@@ -1,0 +1,26 @@
+settings:
+  language: es
+  scheduler-enabled: true
+  scheduler-minutes: 60
+  max-event-duration-seconds: 3600
+
+display:
+  prefix: "<gradient:#8A2BE2:#FF4FD8><bold>ZENVORA EVENTS</bold></gradient> <dark_gray>»</dark_gray> "
+  bossbar:
+    enabled: true
+    color: PURPLE
+    style: SOLID
+  title:
+    enabled: true
+  sounds:
+    enabled: true
+    start: BLOCK_NOTE_BLOCK_PLING
+    end: UI_TOAST_CHALLENGE_COMPLETE
+
+messages:
+  no-permission: "<red>No tienes permiso para hacer esto.</red>"
+  no-event: "<red>No hay un evento activo.</red>"
+  already-running: "<red>Ya hay un evento activo.</red>"
+  started: "<green>El evento <white>%event%</white> ha comenzado.</green>"
+  stopped: "<yellow>El evento <white>%event%</white> terminó.</yellow>"
+  reloaded: "<green>Configuración recargada.</green>"
